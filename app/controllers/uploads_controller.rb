@@ -77,7 +77,7 @@ class UploadsController < ApplicationController
   end
 
   def mapping(image_type, size)
-    types = { 0 => ["390x260", "600x400", "1185x1185"], 1 => ["", "960x690", "1920x1920"]}
+    types = { 0 => ["400x267", "1280x853"], 1 => ["", "960x690", "1920x1920"]}
     return types[image_type][size]
   end
   
