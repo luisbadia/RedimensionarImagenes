@@ -3,7 +3,7 @@ require 'i18n'
 class UploadsController < ApplicationController
   include FileActions
   
-  attr_reader :small, :large, :xlarge
+  attr_reader :small, :large
 
   def export
     @file = File.new("#{FileActions::OUTPUT_FILE}", "r")
