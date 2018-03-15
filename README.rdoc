@@ -1,0 +1,30 @@
+== README
+
+This is an experimental lab of Memorandum Multimedia (author David Mrnustik) with small apps that help with some job tasks.
+
+There are following apps at the moment:
+
+* Optimizator: designed for client's web to handle images for offer and promotion banners
+
+* Uploader: designed for client's web to handle images for galleries
+
+* Watermark: designed for client's web to insert semi-transparent logo watermark on photos
+
+
+This project is done on Ruby o Rails and deployed on heroku:
+
+http://dm-memlab.herokuapp.com
+
+* Ruby version: 2.2.4.
+
+* Rails version: 4.2.5.
+
+* buildpacks: heroku-buildpack-jpegoptim, heroku-buildpack-optipng, heroku-buildpack-ruby
+
+* server: Puma
+
+* server initialization: Procfile
+
+* no DB
+
+* deploy: heroku with buildpacks in app.json

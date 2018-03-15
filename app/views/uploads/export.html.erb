@@ -1,0 +1,13 @@
+<%= content_for :title do %>Subir y redimensionar las imágenes<% end %>
+<br>
+<% if File.exist?(@file) %>
+	<p><%= link_to "Descargar archivo (#{@file.size} kB)", uploads_download_path, 'target': '_blank' %></p>
+<% else %>
+	<p>No hay ningún archivo para descargar.</p>
+<% end %>
+
+<p><%= link_to "Volver", new_upload_path %></p>
+
+<script>
+	var mySubmit = document.querySelector('.submit');
+</script>
