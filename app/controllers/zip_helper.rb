@@ -28,7 +28,6 @@ class ZipFileGenerator
     elsif @controller == 'image_action' || @controller == 'watermark'
       entries.delete("small")
       entries.delete("large")
-      entries.delete("xlarge")
     end
     io = Zip::File.open(@outputFile, Zip::File::CREATE);
 
