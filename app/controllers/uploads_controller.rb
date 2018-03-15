@@ -27,7 +27,7 @@ class UploadsController < ApplicationController
     
     if @upload.valid?
       uploaded_io.each do |upfile|
-        path = FileActions.path(strip_filename(upfile.original_filename), :xlarge)
+        path = FileActions.path(strip_filename(upfile.original_filename), :large)
         File.open(path, 'wb') do |file| file.write(upfile.read)
         end
         convert(path, path, mapping(image_type, 2), false)
